@@ -87,23 +87,21 @@ const Digidex = ({ user }) => {
       text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
           onClick={handleResetSearch}
         >
-        "Resetear"
-</button>
-<Bylevel getByLevel={getByLevel} />
-</div>
-<div className="flex flex-wrap justify-center mt-8 gap-8">
-{loading ? (
-<p className="text-black font-bold text-xl">Cargando...</p>
-) : (
-digimons
-.filter((d) =>
-d.name.toLowerCase().includes(searchTerm.toLowerCase()),
-)
-.map((d, i) => <DigimonCard key={i} digimon={d} />)
-)}
-</div>
-</div>
-);
+          "Borrar"
+        </button>
+        <Bylevel getByLevel={getByLevel} />
+      </div>
+      <div className="flex flex-wrap justify-center mt-8 gap-8">
+        {loading ? (
+          <p className="text-black font-bold text-xl">Cargando...</p>
+        ) : (
+          digimons
+            .filter((d) => d.name.toLowerCase().includes(searchTerm.toLowerCase()))
+            .map((d, i) => <DigimonCard key={i} digimon={d} />)
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Digidex;

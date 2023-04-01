@@ -63,7 +63,7 @@ const ByLevel = ({ getByLevel }) => {
               </button>
             ))}
           </div>
-          {filteredPagination.currentData().map((digimon) => (
+          {filteredDigimon.map((digimon) => (
             <DigimonCard key={digimon.id} digimon={digimon} />
           ))}
         </div>
