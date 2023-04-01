@@ -4,7 +4,7 @@ import background from '../assets/video/Digimon.mp4';
 import sound from '../assets/audio/Digimon.mp3';
 import logo from '../assets/img/Logo_Digimon.png';
 import { UserContext } from '../context/UserContext';
-import { Navigate, useNavigate } from 'react-router';
+import { Navigate } from 'react-router';
 
 const Home = () => {
   const [nameValue, setNameValue] = useState('');
@@ -51,9 +51,9 @@ const Home = () => {
           alt="logo"
         />
       </div>
-      <div className="bg-white/30 h-3/4 w-4/5 flex rounded-3xl shadow-xl shadow-black p-0 mt-44 z-10 absolute top-0 botom-0 left-10 right-0 border-4 border-white outline outline-black hover:traslate sm:ml-8 sm:h-4/5 md:ml-12 sm:mt-60 md:h-4/5 lg:h-4/5 lg:w-3/5 lg:mt-72 lg:ml-40 xl:w-1/2 xl:ml-72 xl:mt-52 xl:h-4/6 2xl:h-4/5 2xl:ml-96 2xl:w-2/4 2xl:mt-80 hover:shadow-lg hover:shadow-white modal">
+      <div className="bg-white/30 h-3/4 w-4/5 flex rounded-3xl shadow-xl shadow-black p-0 mt-44 z-10 absolute top-0 botom-0 left-10 right-0 border-4 border-orange-400 outline outline-black hover:traslate sm:ml-8 sm:h-4/5 md:ml-12 sm:mt-60 md:h-4/5 lg:h-4/5 lg:w-3/5 lg:mt-72 lg:ml-40 xl:w-1/2 xl:ml-72 xl:mt-52 xl:h-4/6 2xl:h-4/5 2xl:ml-96 2xl:w-2/4 2xl:mt-80 hover:shadow-lg hover:shadow-white modal">
         <div className="h-full w-full max-w-lg rounded-3xl p-5 mt-4 mb-4 flex flex-col justify-evenly">
-          <h1 className="title font-black text-center text-5xl text-orange-300 stroke-red-500 stroke-6 md:ml-12 xl:ml-16 2xl:ml-32 w-full hover:saturate-200">
+          <h1 className="title font-black text-center text-5xl text-orange-400 stroke-red-500 stroke-6 md:ml-12 xl:ml-16 2xl:ml-32 w-full hover:saturate-200">
             ¡Hola Tamer!
           </h1>
           <p className="title2 text-3xl text-white font-bold text-center md:ml-14 lg:ml-12  xl:ml-20 2xl:ml-32 w-full">
@@ -64,7 +64,7 @@ const Home = () => {
             onSubmit={handleSubmit}
           >
             <input
-              className="w-full h-9 px-3 border-4 border-cyan-500 outline-2 outline-black rounded-md shadow-lg shadow-slate-500 placeholder:text-black placeholder:text-base placeholder:text-center placeholder:font-bold md:ml-24 xl:ml-36 2xl:ml-60"
+              className="w-full h-9 px-3 border-4 border-orange-400 outline outline-black rounded-md shadow-lg shadow-slate-500 placeholder:text-black placeholder:text-base placeholder:text-center placeholder:font-bold md:ml-24 xl:ml-36 2xl:ml-60"
               required
               maxLength={10}
               id="name"
@@ -74,7 +74,7 @@ const Home = () => {
               onChange={handleChange}
             />
             <button
-              className="w-4/5 h-10 border-2 border-white outline outline-cyan-300 bg-black text-orange-300 transform hover:scale-110 text-lg font-bold rounded-md sm:w-52 md:ml-28 xl:ml-40 2xl:ml-60 hover:saturate-200"
+              className="w-4/5 h-10 border-2 border-white outline outline-black bg-orange-400 text-zinc-900 transform hover:scale-110 text-lg font-bold rounded-md sm:w-52 md:ml-28 xl:ml-40 2xl:ml-60 hover:saturate-200"
               type="submit"
             >
               Digi-Mundo

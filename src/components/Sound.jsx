@@ -40,11 +40,11 @@ const Sound = ({ src }) => {
   return (
     <div className="flex items-center justify-center">
       <button
-        className="w-20 h-10 bg-black border-2 border-white outline outline-cyan-300 rounded-md md:ml-28 xl:ml-40 2xl:ml-60 hover:saturate-200"
+        className="w-20 h-10 bg-orange-400 border-2 border-white outline outline-black rounded-md md:ml-28 xl:ml-40 2xl:ml-60 hover:saturate-200 hover:transform hover:scale-110"
         onClick={toggleSound}
       >
         <FontAwesomeIcon
-          className="text-orange-300 w-10 h-6 icon_music items-center justify-center"
+          className="text-zinc-900 w-10 h-6 icon_music items-center justify-center"
           icon={playing ? faStop : faPlay}
         />
       </button>
