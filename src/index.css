@@ -1,0 +1,950 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+    width: 2px;
+    height: 0px;
+  }
+  
+*::-webkit-scrollbar-track {
+    background: #383838;
+  }
+  
+*::-webkit-scrollbar-thumb {
+    background-color: #6d6c6c;
+    border-radius: 10px;
+    border: 0px none #ffffff;
+  }
+  
+* {
+    box-sizing: border-box;
+    scrollbar-width: none;
+    scrollbar-color: #636363 #383838;
+    padding: 0;
+    margin: 0;
+  }
+body {
+min-height: 100vh;
+}
+.image-logo{
+width: 450px;
+height: 180px;
+}
+
+.title {
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 2.8px;
+}
+.title2{
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1.5px;
+  }
+
+.icon_music{
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 4px;
+}
+
+.warning {
+    -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: .5px;
+}
+.ball {
+    left: 254px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input{
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 1);
+  color: #000;
+}
+.input::placeholder{
+  color: #000;
+}
+
+.bg-black {
+    background-color: #1f1f1f;
+  }
+.shadow{
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 1);
+  }
+.text-white {
+    color: #ffffff;
+  }
+  
+.text-black {
+    color: orange;
+    -webkit-text-stroke-color: cyan;
+    -webkit-text-stroke-width: .5px;
+  }
+
+  .user{
+    -webkit-text-stroke-color: red;
+  -webkit-text-stroke-width: .4px;
+  }
+
+  .loader {
+    height: 100%;
+    animation: fall 0.6s ease-in-out, shake 1.25s ease infinite;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(0, 0) rotate(0);
+    }
+    20% {
+      transform: translate(-10px, 0) rotate(-20deg);
+    }
+    30% {
+      transform: translate(10px, 0) rotate(20deg);
+    }
+    50% {
+      transform: translate(-10px, 0) rotate(-10deg);
+    }
+    60% {
+      transform: translate(10px, 0) rotate(10deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0);
+    }
+  }
+  
+  @keyframes fall {
+    0% {
+      top: -200px;
+    }
+    60% {
+      top: 0;
+    }
+    80% {
+      top: -20px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  .card {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    border: solid 2px transparent; /* Cambia el color del borde a transparente */
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 1);
+}
+
+.card.bgpoison {
+    background: linear-gradient(177.03deg, rgba(91, 49, 132, 0.3) -11.97%, rgba(165, 100, 227, 0.3) 71.28%, rgba(206, 155, 255, 0.3) 135.64%);
+    border: solid 10px #5B3184;
+}
+
+.card.bggrass {
+    background: linear-gradient(178.92deg, rgba(126, 198, 197, 0.3) 0.92%, rgba(171, 218, 198, 0.3) 47.96%, rgba(202, 224, 153, 0.3) 99.08%);
+    border: solid 10px #7EC6C5;
+    color: #7EC6C5;
+}
+
+.card.bgbug {
+    background: linear-gradient(177.56deg, rgba(98, 219, 96, 0.3) -58.92%, rgba(59, 176, 57, 0.3) 16.57%, rgba(170, 255, 168, 0.3) 209.53%);
+    border: solid 8px #62DB60;
+    color: #62DB60;
+}
+
+.card.bgfire {
+    background: linear-gradient(176.37deg, rgba(249, 109, 111, 0.3) -32.26%, rgba(227, 88, 37, 0.3) 22.55%, rgba(232, 174, 27, 0.3) 125.72%);
+    border: solid 8px #F96D6F;
+    color: #F96D6F;
+}
+
+.card.bgwater {
+    background: linear-gradient(179.57deg, rgba(19, 50, 88, 0.3) -70.14%, rgba(20, 121, 251, 0.3) 56.16%, rgba(130, 178, 241, 0.3) 214.85%);
+    border: solid 8px #133258;
+    color: #133258;
+}
+
+.card.bgflying {
+    background: rgba(161, 187, 236, 0.3);
+    background: linear-gradient(-45deg, rgba(203, 228, 243, 0.3) 50%, rgba(157, 194, 236, 0.3) 50%);
+    border: solid 8px #cbe4f3;
+    color: #cbe4f3;
+}
+
+.card.bgnormal {
+    background: linear-gradient(181.51deg, rgba(115, 82, 89, 0.3) -6.44%, rgba(188, 107, 124, 0.3) 121.95%, rgba(124, 63, 76, 0.3) 186.11%);
+    border: solid 8px #735259;
+    color: #735259;
+}
+
+.card.bgelectric {
+    background: linear-gradient(179.75deg, rgba(252, 209, 0, 0.3) -19.96%, rgba(255, 219, 16, 0.3) 43.67%, rgba(252, 210, 0, 0.3) 138.4%);
+    border: solid 8px #FCDD99;
+    color: #FCDD99;
+}
+
+.card.bgground {
+    background: linear-gradient(179.75deg, rgba(101, 84, 59, 0.3) -21.91%, rgba(152, 123, 91, 0.3) 38.85%, rgba(204, 170, 105, 0.3) 87.32%);
+    border: solid 8px #654008;
+    color: #654008;
+}
+.card.bgfairy {
+    background: linear-gradient(180deg, rgba(232, 157, 233, 0.3) -15.67%, rgba(217, 103, 165, 0.3) 49.54%, rgba(229, 173, 210, 0.3) 105.46%);
+    border: solid 8px #EAADCD;
+    color: #EAADCD;
+    }
+    
+    .card.bgrock {
+    background: linear-gradient(177.07deg, rgba(140, 117, 83, 0.3) -18.94%, rgba(189, 166, 108, 0.3) 44.8%, rgba(219, 204, 156, 0.3) 109.64%);
+    border: solid 8px #785A3C;
+    color: #785A3C;
+    }
+    
+    .card.bgsteel {
+    background: linear-gradient(179.84deg, rgba(104, 120, 130, 0.3) -10.58%, rgba(154, 171, 178, 0.3) 50.81%, rgba(188, 202, 206, 0.3) 111.46%);
+    border: solid 8px #4C4C4C;
+    color: #4C4C4C;
+
+    }
+    
+    .card.bgghost {
+        background: linear-gradient(180deg, rgba(251, 109, 232, 0.3) -33.53%, rgba(224, 130, 255, 0.3) 50.67%, rgba(187, 184, 228, 0.3) 146.28%);
+        border: solid 8px #ff00ff;
+        color: #ff00ff;
+    }
+    
+    .card.bgdark {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) -8.11%, rgba(68, 68, 68, 0.3) 50.79%, rgba(116, 116, 116, 0.3) 105.71%);
+        border: solid 8px #363636;
+        color: #363636;
+    }
+    
+    .card.bgpsychic {
+        background: linear-gradient(179.75deg, rgba(194, 97, 158, 0.3) -19.96%, rgba(213, 165, 196, 0.3) 43.67%, rgba(240, 224, 245, 0.3) 138.4%);
+        border: solid 8px #C2619E;
+        color: #C2619E;
+    }
+    
+    .card.bgdragon {
+    background: linear-gradient(180deg, rgba(86, 110, 208, 0.3) -14.04%, rgba(133, 131, 198, 0.3) 50.79%, rgba(182, 178, 225, 0.3) 103.83%);
+    border: solid 8px #566ed04d;
+    color: #566ed04d;
+    }
+    
+    .card.bgice {
+    background: linear-gradient(179.75deg, rgba(127, 187, 204, 0.3) -19.96%, rgba(179, 216, 227, 0.3) 43.67%, rgba(224, 245, 252, 0.3) 138.4%);
+    border: solid 8px #7FBBCC;
+    color: #7FBBCC;
+    }
+    
+    .card.bgfighting {
+    background: linear-gradient(179.75deg, rgba(114, 57, 30, 0.3) -19.96%, rgba(163, 95, 58, 0.3) 43.67%, rgba(217, 152, 103, 0.3) 138.4%);
+    border: solid 8px #72391E;
+    color: #72391E;
+    }
+
+.name {
+  color: black;
+}
+.footer{
+      background: #200122;
+      background: -webkit-linear-gradient(to right, #200122, #6f0000); 
+      background: linear-gradient(to right, #200122, #6f0000);
+      width: 100%;
+      height: 30rem;
+      overflow: hidden;
+  }
+@keyframes latent {
+      0%{
+          
+      };
+      33%{
+          transform: scale(0.7);
+          opacity: .5;
+      }
+      66%{
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+  }
+      100%{
+          transform: scale(0.7);
+          opacity: .5;
+      }
+  }
+  .animate_marquee {
+      animation: marquee 6s linear infinite;
+      -webkit-animation: marquee 6s linear infinite;
+  }
+  
+  .academlo{
+      color: #FF0000;
+      font-weight: 700;
+      font-size: 1.5rem;
+      filter: drop-shadow( .5px .5px .5px #fff);
+      -webkit-filter: drop-shadow( .5px .5px .5px #fff);
+      -webkit-text-stroke-color: #fff;
+      -webkit-text-stroke-width: .5px;
+  }
+  
+  .text_1{
+      text-align: center;
+      font-size: 2rem;
+      color:#FF0000;
+      font-weight: 700;
+      margin-top: 2rem;
+      filter: drop-shadow(.7px .7px .7px #FF0000);
+      -webkit-filter: drop-shadow(.7px .7px .7px #FF0000);
+      text-decoration: none;
+      -webkit-text-stroke-color: #fff;
+      -webkit-text-stroke-width: .5px;
+      
+}
+  .heart{
+      animation: latent 1s infinite linear;
+      -webkit-animation: latent 1s infinite linear;
+  }
+  .heart:hover{
+    box-shadow: 0px 0px 25px 0px rgba(255, 0, 0, 1);
+  }
+  
+  .heart2{
+      text-decoration: none;
+  }
+  
+  
+  .contact{
+      text-align: center;
+      margin-top: 3rem;
+      color: #FF0000;
+      font-size: 2rem;
+      font-weight: 700;
+      filter: drop-shadow(.7px .7px .7px #FF0000);
+      -webkit-filter: drop-shadow(.7px .7px .7px #FF0000);
+      -webkit-text-stroke-color: #fff;
+      -webkit-text-stroke-width: .5px;
+}
+  .social_media{
+     display: flex;
+     justify-content:space-evenly;
+     align-items: center;
+     margin-top: 3rem;
+  }
+  .container_icons{
+      border: 3px solid #FF0000;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+      filter: drop-shadow(1.5px 1.5px 1.5px #FF0000);
+      text-decoration: none;
+      -webkit-filter: drop-shadow(1.5px 1.5px 1.5px #FF0000);
+}
+  
+  .icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 2.1rem;
+      margin-top: 6px;
+      color: #FF0000;
+      animation: latent 1.3s infinite linear;
+      -webkit-animation: latent 1.3s infinite linear;
+}
+  .container_icons:hover {
+    box-shadow: 0px 0px 25px 0px rgba(255, 0, 0, 1);
+  }
+
+@media only screen and (min-width: 380px) {
+    .ball {
+      left: 256px;
+      top: 38px;
+      width: 80px;
+      height: 80px;
+  }
+  .input::placeholder{
+    font-size: 15px;
+  }
+  .select{
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 388px) {
+  .ball {
+    left: 262px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+}
+@media only screen and (min-width: 389px) {
+  .ball {
+    left: 264px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+}
+@media only screen and (min-width: 390px) {
+  .ball {
+    left: 264px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+}
+@media only screen and (min-width: 394px) {
+  .ball {
+    left: 268px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+}
+@media only screen and (min-width: 395px) {
+  .ball {
+    left: 268px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+}
+@media only screen and (min-width: 396px) {
+  .ball {
+    left: 272px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+}
+@media only screen and (min-width: 398px) {
+  .ball {
+    left: 272px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+}
+@media only screen and (min-width: 400px) {
+    .ball {
+      left: 275px;
+      top: 38px;
+      width: 80px;
+      height: 80px;
+  }
+  .input::placeholder{
+    font-size: 15px;
+  }
+  .select{
+    font-size: 15px;
+
+  }
+}
+@media only screen and (min-width: 406px) {
+  .ball {
+    left: 280px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+}
+@media only screen and (min-width: 407px) {
+  .ball {
+    left: 280px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+}
+@media only screen and (min-width: 408px) {
+  .ball {
+    left: 282px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+}
+@media only screen and (min-width: 410px) {
+  .ball {
+    left: 284px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 15px;
+}
+.select{
+  font-size: 15px;
+
+}
+}
+@media only screen and (min-width: 412px) {
+  .ball {
+    left: 288px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 15px;
+}
+.select{
+  font-size: 15px;
+
+}
+}
+@media only screen and (min-width: 413px) {
+  .ball {
+    left: 288px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 15px;
+}
+.select{
+  font-size: 15px;
+
+}
+}
+@media only screen and (min-width: 414px) {
+  .ball {
+    left: 288px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 15px;
+}
+.select{
+  font-size: 15px;
+
+}
+}
+@media only screen and (min-width: 415px) {
+  .ball {
+    left: 288px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 15px;
+}
+.select{
+  font-size: 15px;
+
+}
+}
+@media only screen and (min-width: 420px) {
+  .ball {
+    left: 296px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 15px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 32px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: .8px;
+  margin-bottom: 20px;
+}
+}
+@media only screen and (min-width: 428px) {
+  .ball {
+    left: 302px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+}
+@media only screen and (min-width: 430px) {
+  .ball {
+    left: 304px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 15px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 32px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: .8px;
+  margin-bottom: 20px;
+}
+}
+@media only screen and (min-width: 440px) {
+  .ball {
+    left: 314px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 15px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 32px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: .8px;
+  margin-bottom: 20px;
+}
+}
+@media only screen and (min-width: 450px) {
+  .ball {
+    left: 324px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 15px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 32px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: .8px;
+  margin-bottom: 20px;
+}
+}
+@media only screen and (min-width: 460px) {
+  .ball {
+    left: 334px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 15px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 32px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: .8px;
+  margin-bottom: 20px;
+}
+}
+@media only screen and (min-width: 470px) {
+  .ball {
+    left: 344px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 15px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 32px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: .8px;
+  margin-bottom: 20px;
+}
+}
+@media only screen and (min-width: 470px) {
+  .ball {
+    left: 354px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+}
+@media only screen and (min-width: 546px) {
+  .ball {
+    left: 420px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 15px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 32px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: .8px;
+  margin-bottom: 20px;
+}
+}
+@media only screen and (min-width: 648px) {
+.header{
+    width: 450px;
+    height: 80px;
+  }
+.ball {
+    left: 522px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 20px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 38px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: 1px;
+  margin-bottom: 20px;
+}
+}
+@media only screen and (min-width: 768px) {
+  .header{
+    width: 450px;
+    height: 80px;
+  }
+  .ball {
+    left: 642px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 24px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 42px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: 1.3px;
+  margin-bottom: 20px;
+}
+}
+@media only screen and (min-width: 900px) {
+  .header{
+    width: 600px;
+    height: 90px;
+  }
+  .ball {
+    left: 774px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 24px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 48px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: 1.3px;
+  margin-bottom: 20px;
+}
+}
+@media only screen and (min-width: 1024px) {
+  .header{
+    width: 600px;
+    height: 90px;
+  }
+  .ball {
+    left: 898px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 24px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 48px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: 1.3px;
+  margin-bottom: 20px;
+}
+}
+@media only screen and (min-width: 1280px) {
+  .header{
+    width: 600px;
+    height: 90px;
+  }
+  .ball {
+    left: 1154px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 24px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 58px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: 1.5px;
+}
+}
+@media only screen and (min-width: 1366px) {
+  .header{
+    width: 600px;
+    height: 90px;
+  }
+  .ball {
+    left: 1238px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 24px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 48px;
+  margin-bottom: 20px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: 2px;
+}
+}
+@media only screen and (min-width: 1536px) {
+  .header{
+    width: 800px;
+    height: 105px;
+  }
+  .ball {
+    left: 1410px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 24px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 68px;
+  margin-bottom: 40px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: 2px;
+}
+}
+@media only screen and (min-width: 1920px) {
+  .header{
+    width: 800px;
+    height: 105px;
+  }
+  .ball {
+    left: 1794px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 24px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 70px;
+  margin-bottom: 80px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: 2.8px;
+}
+}
+@media only screen and (min-width: 2560px) {
+  .header{
+    width: 800px;
+    height: 105px;
+  }
+  .ball {
+    left: 2434px;
+    top: 38px;
+    width: 80px;
+    height: 80px;
+}
+.input::placeholder{
+  font-size: 24px;
+}
+.select{
+  font-size: 15px;
+}
+.light{
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 100px;
+  margin-bottom: 80px;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: 4px;
+}
+}
