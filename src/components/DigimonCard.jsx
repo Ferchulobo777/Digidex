@@ -2,7 +2,7 @@ import React from 'react';
 
 const DigimonCard = ({ digimon }) => {
   return (
-    <div className="bg-orange-300 rounded-md p-4 shadow-md shadow-black hover:shadow-lg hover:shadow-white">
+    <div className="bg-orange-300 rounded-md p-6 shadow-md shadow-black hover:shadow-lg hover:shadow-white">
       {digimon.img ? (
         <img
           src={digimon.img}
