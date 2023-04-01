@@ -72,13 +72,13 @@ const Digidex = ({ user }) => {
     setSelectedLevel(e.target.value);
   };
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center mt-20 mb-10 w-full">
       <p className="w-full relative text-center top-52 text-black font-bold text-4xl light">
         Hola Tamer <span className="text-orange-500 user">{user} </span>Bienvenido a tu
         Digidex
       </p>
       <input
-        className="mt-60 flex w-1/2 h-10 text-xl rounded-lg input p-3 placeholder:text-gray-400 font-black placeholder:text-center border-2 border-black"
+        className="mt-60 mb-10 flex w-1/2 h-10 text-xl rounded-lg input p-3 placeholder:text-gray-400 font-black placeholder:text-center border-2 border-black"
         type="text"
         placeholder="Busca aquí tu Digimon"
         value={searchTerm}
@@ -86,17 +86,19 @@ const Digidex = ({ user }) => {
       />
       <div className="flex flex-row flex-wrap gap-12 justify-between">
         <button
-          className="mt-8 bg-red-500 w-28 h-12 text-lg font-bold rounded-lg hover:saturate-200 hover:transform hover:scale-110 hover:shadow hover:shadow-white shadow shadow-blue-text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
+          className="mt-8 mb-10 bg-red-500 w-28 h-12 text-lg font-bold rounded-lg hover:saturate-200 hover:transform hover:scale-110 hover:shadow hover:shadow-white shadow shadow-blue-text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
           onClick={handleResetSearch}
         >
           Borrar
         </button>
         <button
-          className="mt-8 bg-blue-500 w-28 h-12 text-lg font-bold rounded-lg hover:saturate-200 hover:transform hover:scale-110 hover:shadow hover:shadow-white shadow shadow-blue-text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 ml-4"
+          className="mt-8 mb-10 bg-blue-500 w-28 h-12 text-lg font-bold rounded-lg hover:saturate-200 hover:transform hover:scale-110 hover:shadow hover:shadow-white shadow shadow-blue-text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 ml-4"
           onClick={() => (window.location.href = '/')}
         >
           Inicio
         </button>
+      </div>
+      <div className="flex w-full justify-center items-center">
         <Bylevel getByLevel={getByLevel} />
       </div>
       <div className="flex flex-wrap justify-center mt-8 gap-8">
