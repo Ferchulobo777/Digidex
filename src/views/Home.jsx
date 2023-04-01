@@ -51,7 +51,7 @@ const Home = () => {
           alt="logo"
         />
       </div>
-      <div className="bg-white/30 h-3/4 w-4/5 flex rounded-3xl shadow-xl shadow-black p-0 mt-44 z-10 absolute top-0 botom-0 left-10 right-0 border-4 border-white outline outline-black hover:traslate sm:ml-8 sm:h-4/5 md:ml-12 sm:mt-60 md:h-4/5 lg:h-4/5 lg:w-3/5 lg:mt-72 lg:ml-40 xl:w-1/2 xl:ml-72 xl:mt-52 xl:h-4/6 2xl:h-4/5 2xl:ml-96 2xl:w-2/4 2xl:mt-80 hover:shadow-lg hover:shadow-white">
+      <div className="bg-white/30 h-3/4 w-4/5 flex rounded-3xl shadow-xl shadow-black p-0 mt-44 z-10 absolute top-0 botom-0 left-10 right-0 border-4 border-white outline outline-black hover:traslate sm:ml-8 sm:h-4/5 md:ml-12 sm:mt-60 md:h-4/5 lg:h-4/5 lg:w-3/5 lg:mt-72 lg:ml-40 xl:w-1/2 xl:ml-72 xl:mt-52 xl:h-4/6 2xl:h-4/5 2xl:ml-96 2xl:w-2/4 2xl:mt-80 hover:shadow-lg hover:shadow-white modal">
         <div className="h-full w-full max-w-lg rounded-3xl p-5 mt-4 mb-4 flex flex-col justify-evenly">
           <h1 className="title font-black text-center text-5xl text-orange-300 stroke-red-500 stroke-6 md:ml-12 xl:ml-16 2xl:ml-32 w-full hover:saturate-200">
             ¡Hola Tamer!

@@ -75,7 +75,7 @@ const Digidex = ({ user }) => {
     <div className="flex flex-col justify-center items-center mt-20 mb-10 w-full">
       <p className="w-full relative text-center top-52 text-black font-bold text-4xl light">
         Hola Tamer <span className="text-orange-500 user">{user} </span>Bienvenido a tu
-        Digidex
+        Digivice
       </p>
       <input
         className="mt-60 mb-10 flex w-1/2 h-10 text-xl rounded-lg input p-3 placeholder:text-gray-400 font-black placeholder:text-center border-2 border-black"

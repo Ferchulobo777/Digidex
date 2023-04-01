@@ -374,6 +374,13 @@ height: 180px;
   .select{
     font-size: 15px;
   }
+  .image-logo{
+    top: 1px;
+  }
+  .modal{
+    margin-top: 200px;
+    margin-bottom: 50px;
+  }
 }
 @media only screen and (min-width: 388px) {
   .ball {
@@ -444,6 +451,10 @@ height: 180px;
   .select{
     font-size: 15px;
 
+  }
+  .modal{
+    margin-top: 200px;
+    margin-bottom: 50px;
   }
 }
 @media only screen and (min-width: 406px) {
@@ -565,6 +576,14 @@ height: 180px;
   -webkit-text-stroke: blue;
   -webkit-text-stroke-width: .8px;
   margin-bottom: 20px;
+}
+.image-logo{
+  top: 4px;
+  left: 15px;
+}
+.modal{
+  margin-top: 200px;
+  margin-bottom: 50px;
 }
 }
 @media only screen and (min-width: 428px) {
@@ -714,6 +733,14 @@ height: 180px;
   -webkit-text-stroke-width: .8px;
   margin-bottom: 20px;
 }
+.image-logo{
+  top: 1px;
+  left: 74px;
+}
+.modal{
+  margin-left: 18px;
+  margin-top: 200px;
+}
 }
 @media only screen and (min-width: 648px) {
 .header{
@@ -739,6 +766,13 @@ height: 180px;
   -webkit-text-stroke: blue;
   -webkit-text-stroke-width: 1px;
   margin-bottom: 20px;
+}
+.image-logo{
+  top: -100px;
+  left: 15px;
+}
+.modal{
+  margin-bottom: 50px;
 }
 }
 @media only screen and (min-width: 768px) {
@@ -766,6 +800,13 @@ height: 180px;
   -webkit-text-stroke-width: 1.3px;
   margin-bottom: 20px;
 }
+.image-logo{
+  top: -100px;
+  left: 60px;
+}
+.modal{
+  margin-bottom: 50px;
+}
 }
 @media only screen and (min-width: 900px) {
   .header{
@@ -791,6 +832,13 @@ height: 180px;
   -webkit-text-stroke: blue;
   -webkit-text-stroke-width: 1.3px;
   margin-bottom: 20px;
+}
+.image-logo{
+  top: -100px;
+  left: 120px;
+}
+.modal{
+  margin-bottom: 50px;
 }
 }
 @media only screen and (min-width: 1024px) {
@@ -818,6 +866,13 @@ height: 180px;
   -webkit-text-stroke-width: 1.3px;
   margin-bottom: 20px;
 }
+.image-logo{
+  top: -40px;
+  left: 70px;
+}
+.modal{
+  margin-bottom: 10px;
+}
 }
 @media only screen and (min-width: 1280px) {
   .header{
@@ -842,6 +897,13 @@ height: 180px;
   font-size: 58px;
   -webkit-text-stroke: blue;
   -webkit-text-stroke-width: 1.5px;
+}
+.image-logo{
+  top: 0px;
+  left: 30px;
+}
+.modal{
+  margin-bottom: 10px;
 }
 }
 @media only screen and (min-width: 1366px) {
@@ -869,6 +931,13 @@ height: 180px;
   -webkit-text-stroke: blue;
   -webkit-text-stroke-width: 2px;
 }
+.image-logo{
+  top: 0px;
+  left: 60px;
+}
+.modal{
+  margin-bottom: 10px;
+}
 }
 @media only screen and (min-width: 1536px) {
   .header{
@@ -894,6 +963,15 @@ height: 180px;
   margin-bottom: 40px;
   -webkit-text-stroke: blue;
   -webkit-text-stroke-width: 2px;
+}
+.image-logo{
+  top: -40px;
+  left: 45px;
+  width: 800px;
+  height: 270px;
+}
+.modal{
+  margin-bottom: 10px;
 }
 }
 @media only screen and (min-width: 1920px) {
