@@ -2,12 +2,15 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import DigimonCard from '../components/DigimonCard';
 import Bylevel from '../components/ByLevel';
+import { usePagination } from '../hooks/usePagination';
 
 const Digidex = ({ user }) => {
   const [digimons, setDigimons] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedLevel, setSelectedLevel] = useState('');
   const [loading, setLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(0);
+  const [digimonsPerPage, setDigimonsPerPage] = useState(12);
 
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
@@ -83,11 +86,16 @@ const Digidex = ({ user }) => {
       />
       <div className="flex flex-row flex-wrap gap-12 justify-between">
         <button
-          className="mt-8 bg-blue-500 w-28 h-12 text-lg font-bold rounded-lg hover:saturate-200 hover:transform hover:scale-110 hover:shadow hover:shadow-white shadow shadow-blue-
-      text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
+          className="mt-8 bg-red-500 w-28 h-12 text-lg font-bold rounded-lg hover:saturate-200 hover:transform hover:scale-110 hover:shadow hover:shadow-white shadow shadow-blue-text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
           onClick={handleResetSearch}
         >
-          "Borrar"
+          Borrar
+        </button>
+        <button
+          className="mt-8 bg-blue-500 w-28 h-12 text-lg font-bold rounded-lg hover:saturate-200 hover:transform hover:scale-110 hover:shadow hover:shadow-white shadow shadow-blue-text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 ml-4"
+          onClick={() => (window.location.href = '/')}
+        >
+          Inicio
         </button>
         <Bylevel getByLevel={getByLevel} />
       </div>

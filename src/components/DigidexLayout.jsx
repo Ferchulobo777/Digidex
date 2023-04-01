@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import headerred from '../assets/img/Header_Pokedex_Red.png';
 import headerblack from '../assets/img/Header_Pokedex_Black.png';
-import logo from '../assets/img/Logo_Pokedex.png';
+import logo from '../assets/img/Logo_Digidex.png';
 import ball from '../assets/img/Ellipse 3.png';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import Footer from './Footer';
