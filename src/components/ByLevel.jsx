@@ -17,8 +17,8 @@ const ByLevel = ({ getByLevel }) => {
   const filteredPagination = usePagination(filteredDigimon, digimonPerPage);
 
   return (
-    <div className="flex flex-col justify-center items-center mt-16 w-1/2">
-      <p className="text-2xl font-bold mb-2 text-center">Buscar por nivel:</p>
+    <div className="flex flex-col justify-center items-center mt-16 w-full">
+      <p className="text-2xl font-bold mb-2 text-center">Buscar por nivel</p>
       <select
         value={selectedLevel}
         onChange={handleFilterByLevel}
