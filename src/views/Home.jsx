@@ -44,7 +44,7 @@ const Home = () => {
       >
         <source src={background} type="video/mp4" />
       </video>
-      <div className="relative w-80 h-2 sm:w-4/5 sm:h-2/4 sm:top-28 sm:ml-16 flex justify-center items-center mx-8 md:w-3/4 md:h-2/4 md:ml-24 md:top-28 lg:h-16 lg:w-3/5 lg:ml-52 lg:top-24 xl:ml-96 xl:w-2/5 xl:h-48 xl:top-2 2xl:w-2/4 2xl:h-48 2xl:top-14 2xl:ml-96">
+      <div className="relative w-80 h-2 mt-4 sm:w-4/5 sm:h-2/4 sm:top-28 sm:ml-16 flex justify-center items-center mx-8 md:w-3/4 md:h-2/4 md:ml-24 md:top-28 lg:h-16 lg:w-3/5 lg:ml-52 lg:top-24 xl:ml-96 xl:w-2/5 xl:h-48 xl:top-2 2xl:w-2/4 2xl:h-48 2xl:top-14 2xl:ml-96">
         <img
           className="absolute z-10 hover:saturate-200 image-logo"
           src={logo}
