@@ -77,7 +77,7 @@ const Home = () => {
               className="w-4/5 h-10 border-2 border-white outline outline-black bg-orange-400 text-zinc-900 transform hover:scale-110 text-lg font-bold rounded-md sm:w-52 md:ml-28 xl:ml-40 2xl:ml-60 hover:saturate-200"
               type="submit"
             >
-              Digi-Mundo
+              Digimundo
             </button>
             <Sound autoPlay src={sound} />
           </form>
