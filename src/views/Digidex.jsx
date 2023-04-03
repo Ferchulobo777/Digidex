@@ -13,7 +13,9 @@ const Digidex = () => {
   const [loading, setLoading] = useState(true);
   const digimonsPagination = usePagination(
     digimons.length > 0
-      ? digimons.filter((digimon) => digimon.name.includes(searchTerm.toLowerCase()))
+      ? digimons.filter((digimon) =>
+          digimon.name.toLowerCase().startsWith(searchTerm.toLowerCase()),
+        )
       : [],
     21,
   );
@@ -102,7 +104,7 @@ const Digidex = () => {
       <div className="flex w-full justify-center items-center">
         <Bylevel getByLevel={getByLevel} />
       </div>
-      <div className="flex flex-wrap flex-row gap-4 mt-20 justify-center w-3/4 text-xl font-bold hover:shadow-md hover:shadow-red-500 rounded-lg cursor-pointer">
+      <div className="flex flex-wrap flex-row gap-4 mt-20 justify-center w-3/4 text-3xl font-bold hover:shadow-md hover:shadow-red-500 rounded-lg cursor-pointer h-20">
         {digimonsPagination.pages.map((page) => (
           <button
             key={page}
